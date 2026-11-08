@@ -1239,6 +1239,74 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: auto;
 }
 
+/* ==========================================================================
+   Adsterra Sponsored Units & Ad Slots
+   ========================================================================== */
+.ad-slot-wrapper {
+  margin: 28px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ad-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.ad-box {
+  background: rgba(255, 245, 248, 0.6);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.ad-grid-dual {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+
+.sponsored-pill-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #FFF0F4 0%, #FFFFFF 100%);
+  border: 1px solid var(--primary-border);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 2px 8px rgba(255, 46, 116, 0.1);
+  transition: var(--transition);
+}
+
+.sponsored-pill-cta:hover {
+  background: var(--accent-gradient);
+  color: #FFFFFF;
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-1px);
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
   .hero-grid {
