@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mastering GBP/USD (The 'Cable'): Trading BoE vs Fed Rate Divergence | FinBuddy</title>
+  <meta name="description" content="An institutional playbook on trading GBP/USD (The Cable). Master Bank of England vs Federal Reserve monetary divergence, London-New York session overlaps, and spread betting tax perks.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="FinBuddy Homepage">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+            <polyline points="17 6 23 6 23 12"></polyline>
+          </svg>
+        </div>
+        FinBuddy<span class="dot">.</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="blog.html" class="nav-link active">Articles</a></li>
+          <li><a href="index.html#calculators" class="nav-link">Calculators</a></li>
+          <li><a href="index.html#transatlantic-guide" class="nav-link">US vs UK Matrix</a></li>
+          <li><a href="about.html" class="nav-link">About FinBuddy</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="currency-pill">
+          <button id="btnCurUSD" class="currency-btn active">🇺🇸 USD ($)</button>
+          <button id="btnCurGBP" class="currency-btn">🇬🇧 GBP (£)</button>
+        </div>
+        <a href="index.html#newsletter" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">Subscribe</a>
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Article Header -->
+  <section class="article-header">
+    <div class="container" style="max-width: 900px;">
+      <div class="article-breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>&rsaquo;</span>
+        <a href="blog.html">Articles</a>
+        <span>&rsaquo;</span>
+        <span style="color: var(--primary);">Forex &amp; Macro</span>
+      </div>
+
+      <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+        <span class="badge forex">Forex &amp; Macro</span>
+        <span class="badge" style="background: rgba(239, 68, 68, 0.1); color: #DC2626; border-color: rgba(239, 68, 68, 0.25);">The Cable Playbook</span>
+      </div>
+
+      <h1 class="article-main-title">
+        Mastering GBP/USD (The 'Cable'): <span class="text-gradient">Trading Bank of England</span> vs. Fed Rate Divergence
+      </h1>
+
+      <div class="article-author-bar">
+        <div class="author-chip">
+          <div class="author-avatar" style="background: linear-gradient(135deg, #2563EB, #1D4ED8);">AR</div>
+          <div>
+            <div class="author-name">Alistair Ross, CMT</div>
+            <div style="font-size: 0.78rem; color: var(--text-muted);">Chief FX Market Strategist, Ex-Barclays Capital FX Desk London</div>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem; color: var(--text-muted);">
+          <span>Published: November 2026</span>
+          <span>•</span>
+          <span>9 min read</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <main class="container">
+    <div class="article-content-layout two-column" style="max-width: 1040px; margin: 0 auto;">
+      <article class="article-body">
+        <div style="margin-bottom: 35px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <img src="images/blog-forex-cable.svg" alt="Forex GBP USD Cable graphic">
+        </div>
+
+        <p class="lead" style="font-size: 1.25rem; line-height: 1.7; color: var(--text-main); font-weight: 500;">
+          In 1866, the first successful transatlantic telegraph cable was laid across the ocean floor connecting Valentia Island in Ireland to Heart's Content in Newfoundland. For the first time in human history, currency exchange quotes between the City of London and the New York Stock Exchange flashed across oceans within seconds.
+        </p>
+
+        <p>
+          Today, 160 years later, <strong>GBP/USD</strong>—still affectionately christened <strong>"The Cable"</strong>—remains the third most traded currency pair on the planet, handling over $800 billion in daily turnover.
+        </p>
+
+        <p>
+          For US and UK traders, Cable represents the ultimate macroeconomic arena: a direct duel between the monetary decisions of the <strong>Bank of England (BoE)</strong> and the <strong>Federal Reserve (Fed)</strong>.
+        </p>
+
+        <h2 id="interest-rate-mechanics">1. The Core Macro Engine: Interest Rate Differentials</h2>
+        <p>
+          Currencies are priced fundamentally on <strong>interest rate differentials</strong> and relative economic strength. When the Federal Reserve maintains higher benchmark policy rates than the Bank of England, global institutional capital flows into US Treasuries, boosting demand for USD and pushing GBP/USD downward.
+        </p>
+        <p>
+          Conversely, when UK core services inflation proves sticky, forcing the Monetary Policy Committee (MPC) at Threadneedle Street to delay rate cuts while the FOMC trims borrowing costs, the resulting yield gap compression propels Cable sharply higher.
+        </p>
+
+        <blockquote>
+          "In currency trading, you don't trade static GDP or absolute interest rates; you trade the second derivative: the difference between market consensus and the surprise factor."
+        </blockquote>
+
+        <h2 id="key-catalysts">2. High-Impact Economic Indicators Every Trader Must Watch</h2>
+        <p>
+          Cable experiences its sharpest 50 to 120 pip intraday swings immediately following these transatlantic data releases:
+        </p>
+
+        <div class="table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Economic Event</th>
+                <th>Jurisdiction</th>
+                <th>Release Schedule</th>
+                <th>Typical Market Impact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>US Non-Farm Payrolls (NFP)</strong></td>
+                <td>🇺🇸 Bureau of Labor Statistics</td>
+                <td>First Friday of each month (1:30 PM GMT)</td>
+                <td>Extreme intraday USD volatility; triggers immediate repricing of Fed rate cut bets.</td>
+              </tr>
+              <tr>
+                <td><strong>UK Consumer Price Index (CPI)</strong></td>
+                <td>🇬🇧 Office for National Statistics (ONS)</td>
+                <td>Mid-month Wednesday (7:00 AM GMT)</td>
+                <td>Sets BoE rate expectations; hot services inflation triggers instant GBP rallies.</td>
+              </tr>
+              <tr>
+                <td><strong>FOMC Rate Decision &amp; Presser</strong></td>
+                <td>🇺🇸 Federal Reserve</td>
+                <td>8 times per year (7:00 PM GMT)</td>
+                <td>Dictates global dollar liquidity, dot-plot projections, and dollar trend direction.</td>
+              </tr>
+              <tr>
+                <td><strong>BoE MPC Rate Decision &amp; Minutes</strong></td>
+                <td>🇬🇧 Bank of England</td>
+                <td>8 times per year (12:00 PM GMT)</td>
+                <td>Voting splits (e.g., 6-3 vs 8-1) provide vital clues on internal committee hawks vs doves.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="golden-overlap">3. Timing the Market: The "Golden Overlap" Window</h2>
+        <p>
+          While the foreign exchange market trades 24 hours a day, 5 days a week, trading Cable during the Asian session is often a frustrating exercise in range-bound chop with wide spreads.
+        </p>
+
+        <div class="callout-box">
+          <div class="callout-title">
+            <span>⚡ The 1:00 PM – 4:00 PM GMT Liquidity Surge</span>
+          </div>
+          <p style="margin-bottom: 0; font-size: 0.95rem;">
+            The highest liquidity and tightest bid-ask spreads occur during the <strong>London / New York session overlap</strong> (8:00 AM – 11:00 AM Eastern Time / 1:00 PM – 4:00 PM London Time). This window accounts for nearly 50% of all global daily FX volume, producing genuine trend breakouts and reliable institutional order-block retests.
+          </p>
+        </div>
+
+        <h2 id="uk-spread-betting">4. The UK Advantage: Financial Spread Betting vs CFDs</h2>
+        <p>
+          Traders residing in the United Kingdom hold a massive, unique structural advantage over American peers:
+        </p>
+        <ul>
+          <li><strong>US Retail Traders:</strong> Subject to CFTC and NFA regulations. The maximum leverage on GBP/USD is capped at 1:50. Profits are subject to Section 1256 60/40 tax rules (60% long-term, 40% short-term capital gains tax).</li>
+          <li><strong>UK Retail Traders:</strong> Can access <strong>Financial Spread Betting</strong> (regulated by the FCA). Under current UK tax law, spread betting is classified as a wager rather than an investment. Consequently, <strong>all profits are 100% exempt from both Capital Gains Tax (CGT) and Stamp Duty</strong>.</li>
+        </ul>
+
+        <div class="callout-box uk">
+          <div class="callout-title">
+            <span>💡 UK Tax Tip</span>
+          </div>
+          <p style="margin-bottom: 0; font-size: 0.92rem;">
+            UK residents trading GBP/USD should almost always opt for an FCA-regulated spread betting account rather than standard CFDs, as CFD profits are subject to UK Capital Gains Tax once you exceed the annual £3,000 allowance.
+          </p>
+        </div>
+
+        <h2 id="risk-framework">5. The Professional Risk Framework</h2>
+        <p>
+          High leverage is the #1 killer of retail Forex accounts. Professional desks adhere to non-negotiable risk rules:
+        </p>
+        <ol>
+          <li><strong>The 1% Capital Rule:</strong> Never risk more than 1% of your total account balance on any single Cable position. If your account equity is $25,000, your maximum stop-loss dollar loss must not exceed $250.</li>
+          <li><strong>Calculate Pips Before Entering:</strong> Use FinBuddy's Forex Pip &amp; Position Sizing tool to determine your exact lot size based on your technical stop loss level, not an emotional hunch.</li>
+          <li><strong>Avoid Holding Over Tier-1 Data Releases:</strong> Slippage during an unexpected NFP headline or BoE emergency speech can bypass your stop order, causing unexpected losses.</li>
+        </ol>
+
+        <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+        <!-- Share Bar -->
+        <div style="background: var(--bg-subtle); padding: 24px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <h4 style="margin-bottom: 4px;">Share this Forex brief</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">Trade Cable with clarity alongside your network.</p>
+          </div>
+          <div class="share-bar" style="margin-top: 0;">
+            <button class="share-btn" data-share="x" title="Share on X">𝕏</button>
+            <button class="share-btn" data-share="linkedin" title="Share on LinkedIn">in</button>
+            <button class="share-btn" data-share="copy" title="Copy Article Link">🔗</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="sticky-sidebar">
+        <div class="sidebar-widget">
+          <h4 class="widget-title">Table of Contents</h4>
+          <ul class="toc-list">
+            <li><a href="#interest-rate-mechanics" class="toc-link">1. Macro Engine &amp; Rates</a></li>
+            <li><a href="#key-catalysts" class="toc-link">2. High-Impact Catalysts</a></li>
+            <li><a href="#golden-overlap" class="toc-link">3. The Golden Overlap</a></li>
+            <li><a href="#uk-spread-betting" class="toc-link">4. UK Spread Betting Perks</a></li>
+            <li><a href="#risk-framework" class="toc-link">5. Professional Risk Framework</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget" style="background: var(--bg-secondary); border-color: var(--primary-border);">
+          <h4 class="widget-title" style="color: var(--primary);">Interactive Pip Calculator</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px;">
+            Calculate your stop loss pip value and lot size in USD or GBP.
+          </p>
+          <a href="index.html#calculators" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 10px 14px;">
+            Open Pip Calculator
+          </a>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4 class="widget-title">Related Reading</h4>
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <a href="post-isa-401k.html" style="font-size: 0.9rem; font-weight: 600; line-height: 1.4; color: var(--text-main);">
+              401(k) &amp; Stocks ISA Blueprint &rarr;
+            </a>
+            <a href="post-crypto-guide.html" style="font-size: 0.9rem; font-weight: 600; line-height: 1.4; color: var(--text-main);">
+              Bitcoin ETFs &amp; Crypto Tax Guide &rarr;
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="disclaimer-box">
+        <strong>Forex Risk Disclosure:</strong> Foreign exchange and leverage trading carries a high level of risk to your capital and you can lose more than your initial deposit. In the UK, 70-80% of retail investor accounts lose money when trading spread bets and CFDs. You should consider whether you understand how FX instruments work and whether you can afford to take the high risk of losing your money.
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 FinBuddy Media Group Inc.</div>
+        <div><a href="blog.html">Back to All Articles</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

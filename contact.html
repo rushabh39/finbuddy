@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact FinBuddy | Editorial & Press Inquiries</title>
+  <meta name="description" content="Get in touch with FinBuddy's editorial team in New York and London. Inquire about research, press partnerships, or submit reader questions.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="FinBuddy Homepage">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+            <polyline points="17 6 23 6 23 12"></polyline>
+          </svg>
+        </div>
+        FinBuddy<span class="dot">.</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="blog.html" class="nav-link">Articles</a></li>
+          <li><a href="index.html#calculators" class="nav-link">Calculators</a></li>
+          <li><a href="index.html#transatlantic-guide" class="nav-link">US vs UK Matrix</a></li>
+          <li><a href="about.html" class="nav-link">About FinBuddy</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="currency-pill">
+          <button id="btnCurUSD" class="currency-btn active">🇺🇸 USD ($)</button>
+          <button id="btnCurGBP" class="currency-btn">🇬🇧 GBP (£)</button>
+        </div>
+        <a href="index.html#newsletter" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">Subscribe</a>
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Banner -->
+  <section class="hero-section" style="padding: 60px 0 45px;">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span class="badge" style="margin-bottom: 12px;">Get In Touch</span>
+      <h1 class="hero-title" style="font-size: 2.8rem;">
+        Connect with the <span class="text-gradient">FinBuddy Newsroom</span>
+      </h1>
+      <p class="hero-desc" style="margin: 0 auto; font-size: 1.1rem;">
+        Have a question about a market analysis, an inquiry from the press, or research feedback? Reach our transatlantic team below.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Layout -->
+  <section class="section">
+    <div class="container" style="max-width: 1040px;">
+      <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: start;">
+        <!-- Contact Form Card -->
+        <div class="tool-card">
+          <h2 style="font-size: 1.6rem; margin-bottom: 8px;">Send Us a Message</h2>
+          <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 24px;">
+            Our editors typically respond within 24 hours during trading days.
+          </p>
+
+          <form id="contactForm" class="calculator-form">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Your Name</label>
+              <input type="text" id="contactName" class="form-input" placeholder="e.g. Alexander Hamilton" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="alexander@domain.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactRegion">Primary Region</label>
+              <select id="contactRegion" class="form-input">
+                <option value="US">🇺🇸 United States (SEC / IRS Market)</option>
+                <option value="UK">🇬🇧 United Kingdom (FCA / HMRC Market)</option>
+                <option value="Global">🌐 Other International Jurisdiction</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactTopic">Inquiry Topic</label>
+              <select id="contactTopic" class="form-input">
+                <option value="editorial">Editorial Feedback / Question</option>
+                <option value="press">Press &amp; Media Interview</option>
+                <option value="research">Transatlantic Research Collaboration</option>
+                <option value="compliance">Compliance &amp; Corrections</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Message</label>
+              <textarea id="contactMessage" class="form-input" rows="5" placeholder="Share your question or topic in detail..." required style="resize: vertical;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px; width: 100%;">
+              Send Message to FinBuddy
+            </button>
+          </form>
+        </div>
+
+        <!-- Office & Direct Contacts -->
+        <div>
+          <!-- New York Office -->
+          <div class="tool-card" style="margin-bottom: 24px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+              <span style="font-size: 1.5rem;">🇺🇸</span>
+              <div>
+                <h3 style="font-size: 1.15rem;">New York Bureau</h3>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Wall Street &amp; US Markets Desk</div>
+              </div>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-body); line-height: 1.6;">
+              140 Broadway, 28th Floor<br>
+              Financial District, New York, NY 10005<br>
+              Email: <strong>ny@finbuddy.media</strong>
+            </p>
+          </div>
+
+          <!-- London Office -->
+          <div class="tool-card" style="margin-bottom: 24px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+              <span style="font-size: 1.5rem;">🇬🇧</span>
+              <div>
+                <h3 style="font-size: 1.15rem;">London Bureau</h3>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">City of London &amp; FX Desk</div>
+              </div>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-body); line-height: 1.6;">
+              100 Bishopsgate, Level 18<br>
+              London, EC2N 4AG, United Kingdom<br>
+              Email: <strong>london@finbuddy.media</strong>
+            </p>
+          </div>
+
+          <!-- Quick FAQ -->
+          <div class="tool-card" style="background: var(--bg-subtle);">
+            <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Frequently Asked</h3>
+            <div style="font-size: 0.86rem; color: var(--text-body); line-height: 1.6;">
+              <p style="margin-bottom: 10px;">
+                <strong>Does FinBuddy offer personal portfolio management?</strong><br>
+                No. FinBuddy is strictly an educational publication and does not accept client funds.
+              </p>
+              <p style="margin-bottom: 0;">
+                <strong>Can I pitch a guest op-ed?</strong><br>
+                Yes, qualified CFA/CMT/ACCA credential holders may submit pitches to our editorial desk.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="disclaimer-box">
+        <strong>Compliance Notice:</strong> Communications through this form do not create an advisor-client relationship. Please do not send sensitive account numbers or private keys.
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 FinBuddy Media Group Inc. All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Articles</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

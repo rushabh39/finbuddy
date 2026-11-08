@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial & Investment Articles | FinBuddy Archive</title>
+  <meta name="description" content="Explore FinBuddy's complete archive of finance, crypto, and forex guides tailored for US and UK investors. Master wealth accumulation, tax wrappers, and currency trading.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress"></div>
+
+  <!-- Real-Time Market Ticker Tape -->
+  <div class="ticker-tape-container">
+    <div class="ticker-tape-track">
+      <div class="ticker-item">
+        <span class="ticker-symbol">BTC/USD</span>
+        <span class="dynamic-ticker-val" data-base="89420.50">89,420.50</span>
+        <span class="ticker-change pos">▲ +3.42%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-symbol">GBP/USD</span>
+        <span class="dynamic-ticker-val" data-base="1.2865">1.2865</span>
+        <span class="ticker-change pos">▲ +0.28%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-symbol">ETH/USD</span>
+        <span class="dynamic-ticker-val" data-base="3420.10">3,420.10</span>
+        <span class="ticker-change pos">▲ +2.15%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-symbol">EUR/USD</span>
+        <span class="dynamic-ticker-val" data-base="1.0825">1.0825</span>
+        <span class="ticker-change neg">▼ -0.14%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-symbol">S&amp;P 500</span>
+        <span class="dynamic-ticker-val" data-base="5864.20">5,864.20</span>
+        <span class="ticker-change pos">▲ +0.65%</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-symbol">FTSE 100</span>
+        <span class="dynamic-ticker-val" data-base="8240.80">8,240.80</span>
+        <span class="ticker-change pos">▲ +0.41%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="FinBuddy Homepage">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+            <polyline points="17 6 23 6 23 12"></polyline>
+          </svg>
+        </div>
+        FinBuddy<span class="dot">.</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="blog.html" class="nav-link active">Articles</a></li>
+          <li><a href="index.html#calculators" class="nav-link">Calculators</a></li>
+          <li><a href="index.html#transatlantic-guide" class="nav-link">US vs UK Matrix</a></li>
+          <li><a href="about.html" class="nav-link">About FinBuddy</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="currency-pill">
+          <button id="btnCurUSD" class="currency-btn active">🇺🇸 USD ($)</button>
+          <button id="btnCurGBP" class="currency-btn">🇬🇧 GBP (£)</button>
+        </div>
+        <a href="index.html#newsletter" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">Subscribe</a>
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="hero-section" style="padding: 60px 0 45px;">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span class="badge" style="margin-bottom: 12px;">Transatlantic Knowledge Base</span>
+      <h1 class="hero-title" style="font-size: 2.8rem; margin-bottom: 16px;">
+        Financial Intelligence &amp; <span class="text-gradient">Market Playbooks</span>
+      </h1>
+      <p class="hero-desc" style="margin: 0 auto 30px; font-size: 1.05rem;">
+        Filter our comprehensive research across personal wealth, cryptocurrency dynamics, and currency market analysis.
+      </p>
+
+      <!-- Search Input -->
+      <div style="position: relative; max-width: 580px; margin: 0 auto 24px;">
+        <input type="text" id="blogSearch" class="form-input" placeholder="Search by topic, e.g. 401(k), Bitcoin ETF, Cable, HMRC..." style="padding-left: 45px; border-radius: var(--radius-full); box-shadow: var(--shadow-md);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%);">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+        <button class="btn btn-secondary filter-pill active" data-filter="all" style="padding: 7px 18px; font-size: 0.85rem;">All Topics</button>
+        <button class="btn btn-secondary filter-pill" data-filter="wealth" style="padding: 7px 18px; font-size: 0.85rem;">💰 Wealth &amp; Tax</button>
+        <button class="btn btn-secondary filter-pill" data-filter="crypto" style="padding: 7px 18px; font-size: 0.85rem;">₿ Crypto &amp; Web3</button>
+        <button class="btn btn-secondary filter-pill" data-filter="forex" style="padding: 7px 18px; font-size: 0.85rem;">💱 Forex &amp; Macro</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Listing -->
+  <section class="section">
+    <div class="container">
+      <div class="posts-grid" id="blogCardsContainer">
+        <!-- Post 1 -->
+        <article class="post-card archive-post-card" data-category="wealth">
+          <div class="post-card-thumb">
+            <img src="images/blog-wealth-isa-401k.svg" alt="Transatlantic wealth blueprint for US and UK investors">
+            <span class="post-badge-pos badge finance">Finance &amp; Wealth</span>
+            <span class="post-flag-tag">🇺🇸 US &amp; 🇬🇧 UK</span>
+          </div>
+          <div class="post-card-body">
+            <div class="post-meta-row">
+              <span class="post-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                8 min read
+              </span>
+              <span>•</span>
+              <span class="post-meta-item">Nov 2026</span>
+            </div>
+            <h2 class="post-card-title">
+              <a href="post-isa-401k.html">The Transatlantic Wealth Blueprint: 401(k) &amp; Roth IRA vs. Stocks &amp; Shares ISA</a>
+            </h2>
+            <p class="post-card-excerpt">
+              Compare US and UK retirement structures side-by-side. Discover how compounding inside tax-free envelopes yields substantial cross-border alpha while avoiding punitive double taxation.
+            </p>
+            <div class="post-card-footer">
+              <div class="author-chip">
+                <div class="author-avatar">EC</div>
+                <div class="author-name">Edward Collins, CFA</div>
+              </div>
+              <a href="post-isa-401k.html" class="read-link">
+                Read Full Guide &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="post-card archive-post-card" data-category="crypto">
+          <div class="post-card-thumb">
+            <img src="images/blog-crypto-halving.svg" alt="Institutional Bitcoin ETF and crypto tax guide">
+            <span class="post-badge-pos badge crypto">Crypto &amp; Digital Assets</span>
+            <span class="post-flag-tag">🇺🇸 SEC / 🇬🇧 HMRC</span>
+          </div>
+          <div class="post-card-body">
+            <div class="post-meta-row">
+              <span class="post-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                10 min read
+              </span>
+              <span>•</span>
+              <span class="post-meta-item">Nov 2026</span>
+            </div>
+            <h2 class="post-card-title">
+              <a href="post-crypto-guide.html">Institutional Crypto &amp; Bitcoin: Navigating SEC Spot ETFs, HMRC Taxes, &amp; Cold Storage</a>
+            </h2>
+            <p class="post-card-excerpt">
+              Unpack post-halving dynamics, institutional inflows into US spot ETFs, UK FCA crypto promotion rules, and how to structure your holdings to legally minimize capital gains tax liabilities.
+            </p>
+            <div class="post-card-footer">
+              <div class="author-chip">
+                <div class="author-avatar">SL</div>
+                <div class="author-name">Sophia Laurent, MBA</div>
+              </div>
+              <a href="post-crypto-guide.html" class="read-link">
+                Read Full Guide &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="post-card archive-post-card" data-category="forex">
+          <div class="post-card-thumb">
+            <img src="images/blog-forex-cable.svg" alt="Forex GBP USD Cable trading guide">
+            <span class="post-badge-pos badge forex">Forex &amp; Macro</span>
+            <span class="post-flag-tag">BoE vs Fed</span>
+          </div>
+          <div class="post-card-body">
+            <div class="post-meta-row">
+              <span class="post-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                9 min read
+              </span>
+              <span>•</span>
+              <span class="post-meta-item">Nov 2026</span>
+            </div>
+            <h2 class="post-card-title">
+              <a href="post-forex-cable.html">Mastering GBP/USD (The 'Cable'): Trading Bank of England vs Fed Rate Divergence</a>
+            </h2>
+            <p class="post-card-excerpt">
+              An institutional trader's playbook for trading the world's most storied currency pair. Master rate cut differentials, inflation surprises, London-New York session overlaps, and risk sizing.
+            </p>
+            <div class="post-card-footer">
+              <div class="author-chip">
+                <div class="author-avatar">AR</div>
+                <div class="author-name">Alistair Ross, CMT</div>
+              </div>
+              <a href="post-forex-cable.html" class="read-link">
+                Read Full Guide &rarr;
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- No Results Feedback Message -->
+      <div id="noResultsMsg" style="display: none; text-align: center; padding: 60px 20px;">
+        <div style="font-size: 3rem; margin-bottom: 12px;">🔍</div>
+        <h3>No matching guides found</h3>
+        <p style="color: var(--text-muted); margin-top: 8px;">Try searching for terms like "ISA", "Bitcoin", "Cable", or "Forex".</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 16px;">
+            <div class="logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            FinBuddy<span class="dot">.</span>
+          </a>
+          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+            FinBuddy delivers rigorous financial, cryptocurrency, and macroeconomic intelligence for transatlantic investors.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">All Guides</a></li>
+            <li><a href="index.html#calculators">Tools &amp; Calculators</a></li>
+            <li><a href="about.html">About FinBuddy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="post-isa-401k.html">401(k) &amp; Stocks ISA Blueprint</a></li>
+            <li><a href="post-crypto-guide.html">Bitcoin ETF &amp; Crypto Taxation</a></li>
+            <li><a href="post-forex-cable.html">GBP/USD Cable Forex Tactics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+            Receive our Sunday briefing with key central bank events and asset flows.
+          </p>
+          <a href="index.html#newsletter" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.85rem;">Subscribe to Wire</a>
+        </div>
+      </div>
+
+      <div class="disclaimer-box">
+        <strong>Regulatory &amp; Financial Disclaimer:</strong> FinBuddy is an educational media publication. We do not provide personalized financial, legal, or tax advice. Past market performance is no guarantee of future returns.
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 FinBuddy Media Group Inc. All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="about.html">Editorial Standards</a>
+          <a href="contact.html">Privacy</a>
+          <a href="contact.html">Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
