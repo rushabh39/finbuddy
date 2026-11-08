@@ -2,6 +2,9 @@
 > **Smart Wealth, Crypto & Forex Intelligence for US & UK Investors**  
 > Built with a modern, luxury White & Pink fintech aesthetic, interactive financial calculators, and dual-currency transatlantic market analysis.
 
+🔗 **Live Website**: [https://rushabh39.github.io/finbuddy/](https://rushabh39.github.io/finbuddy/)  
+📦 **GitHub Repository**: [https://github.com/rushabh39/finbuddy](https://github.com/rushabh39/finbuddy)
+
 ---
 
 ## 🌟 Overview
